@@ -93,8 +93,8 @@
 	},
 	"scripts": {
 		"dev": "next -p 3003",
-		"start": "SET NODE_OPTIONS=--openssl-legacy-provider && next -p 3003",
-		"build": "SET NODE_OPTIONS=--openssl-legacy-provider && next build",
+		"start": "next -p 3003",
+		"build": "next build",
 		"serve": "next start",
 		"analyze": "cross-env ANALYZE=1 next build",
 		"heroku-postbuild": "npm run build"

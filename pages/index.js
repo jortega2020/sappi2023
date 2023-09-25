@@ -81,7 +81,7 @@ export default function SignInPage(props) {
               <IntlMessages id="page.signInPreview" />
             </p>
 
-            <div className="isoInputWrapper isoOtherLogin">
+            {/* <div className="isoInputWrapper isoOtherLogin">
               <Button
                 onClick={handleLogin}
                 type="primary"
@@ -109,7 +109,7 @@ export default function SignInPage(props) {
                 history={router}
                 login={token => dispatch(login(token))}
               />
-            </div>
+            </div> */}
             <div className="isoCenterComponent isoHelperWrapper">
               <Link href="/forgotpassword">
                 <div className="isoForgotPass">

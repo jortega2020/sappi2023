@@ -94,8 +94,8 @@
 	"scripts": {
 		"dev": "next -p 3003",
 		"start": "next -p 3003",
-		"build": "next build",
-		"serve": "next start",
+		"build": "next --openssl-legacy-provider build",
+		"serve": "next --openssl-legacy-provider start",
 		"analyze": "cross-env ANALYZE=1 next build",
 		"heroku-postbuild": "npm run build"
 	},

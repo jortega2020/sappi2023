@@ -1,0 +1,171 @@
+[debug] [2023-09-25T05:04:24.115Z] ----------------------------------------------------------------------
+[debug] [2023-09-25T05:04:24.118Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-09-25T05:04:24.119Z] CLI Version:   12.5.4
+[debug] [2023-09-25T05:04:24.119Z] Platform:      win32
+[debug] [2023-09-25T05:04:24.119Z] Node Version:  v16.20.2
+[debug] [2023-09-25T05:04:24.120Z] Time:          Sun Sep 24 2023 22:04:24 GMT-0700 (hora estándar del Pacífico de México)
+[debug] [2023-09-25T05:04:24.121Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-25T05:04:24.218Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-25T05:04:24.219Z] > authorizing via signed-in user (jesuskaoz@gmail.com)
+[debug] [2023-09-25T05:04:24.219Z] [iam] checking project sappi-696b4 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-09-25T05:04:24.222Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sappi-696b4:testIamPermissions [none]
+[debug] [2023-09-25T05:04:24.222Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/sappi-696b4:testIamPermissions x-goog-quota-user=projects/sappi-696b4
+[debug] [2023-09-25T05:04:24.222Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sappi-696b4:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-09-25T05:04:24.703Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sappi-696b4:testIamPermissions 200
+[debug] [2023-09-25T05:04:24.703Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sappi-696b4:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-09-25T05:04:24.705Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sappi-696b4 [none]
+[debug] [2023-09-25T05:04:25.424Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sappi-696b4 200
+[debug] [2023-09-25T05:04:25.425Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sappi-696b4 {"projectId":"sappi-696b4","projectNumber":"1021619347259","displayName":"SAPPI","name":"projects/sappi-696b4","resources":{"hostingSite":"sappi-696b4"},"state":"ACTIVE","etag":"1_d51014d2-185b-4b3c-ae23-e4c1d33dcac0"}
+[debug] [2023-09-25T05:04:36.974Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/sappi-696b4/sites pageToken=&pageSize=10
+[debug] [2023-09-25T05:04:37.712Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/sappi-696b4/sites 200
+[debug] [2023-09-25T05:04:37.712Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/sappi-696b4/sites {"sites":[{"name":"projects/sappi-696b4/sites/sappi-696b4","defaultUrl":"https://sappi-696b4.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-09-25T05:04:37.713Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/sappi-696b4/sites 
+[debug] [2023-09-25T05:04:38.224Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/sappi-696b4/sites 200
+[debug] [2023-09-25T05:04:38.224Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/sappi-696b4/sites {"sites":[{"name":"projects/sappi-696b4/sites/sappi-696b4","defaultUrl":"https://sappi-696b4.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-09-25T05:04:38.224Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sappi-696b4/webApps/-/config [none]
+[debug] [2023-09-25T05:04:38.704Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sappi-696b4/webApps/-/config 200
+[debug] [2023-09-25T05:04:38.704Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sappi-696b4/webApps/-/config {"projectId":"sappi-696b4","storageBucket":"sappi-696b4.appspot.com","apiKey":"AIzaSyCEZBzOoo4inTyLW4a6YRokz5_RcgEAM00","authDomain":"sappi-696b4.firebaseapp.com","messagingSenderId":"1021619347259"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[info] info  - Using webpack 4. Reason: webpack5 flag is set to false in next.config.js https://nextjs.org/docs/messages/webpack5
+
+[info] info  - Checking validity of types...
+
+[info] warn  - No ESLint configuration detected. Run next lint to begin setup
+
+[info] info  - Creating an optimized production build...
+
+[info] info  - Using external babel configuration from C:\Users\EDUARDO\Documents\DEMO\isomorphic\isomorphic-nextjs\babel.config.js
+
+[info] info  - Compiled successfully
+
+[info] info  - Collecting page data...
+
+[info] Using browser-only version of superagent in non-browser environment
+
+[info] Warning: You have opted-out of Automatic Static Optimization due to `getInitialProps` in `pages/_app`. This does not opt-out pages with `getStaticProps`
+Read more: https://nextjs.org/docs/messages/opt-out-auto-static-optimization
+
+
+[info] Page                                                           Size     First Load JS
+┌ λ /                                                          4.05 kB         857 kB
+├   /_app                                                      0 B             566 kB
+├ λ /404                                                       1.33 kB         571 kB
+├ λ /500                                                       1.32 kB         571 kB
+├ λ /api/login                                                 0 B             566 kB
+├ λ /dashboard                                                 169 kB          934 kB
+├ λ /dashboard/alert                                           802 B           617 kB
+├ λ /dashboard/autocomplete                                    5 kB            640 kB
+├ λ /dashboard/blank_page                                      1.23 kB         611 kB
+├ λ /dashboard/button                                          7.88 kB         625 kB
+├ λ /dashboard/calendar                                        65.8 kB         708 kB
+├ λ /dashboard/card                                            12.9 kB         778 kB
+├   └ css/c539539ada32d1aab351.css                             34.8 kB
+├ λ /dashboard/cart                                            4.31 kB         621 kB
+├ λ /dashboard/chat                                            19.7 kB         629 kB
+├ λ /dashboard/checkbox                                        4.78 kB         617 kB
+├ λ /dashboard/checkout                                        7.43 kB         640 kB
+├ λ /dashboard/codeMirror                                      2.75 kB         612 kB
+├ λ /dashboard/contacts                                        20.7 kB         635 kB
+├ λ /dashboard/dropdown                                        3.77 kB         621 kB
+├ λ /dashboard/dropzone                                        17.2 kB         627 kB
+├   └ css/97fcc5ced0ba1723cd73.css                             1.51 kB
+├ λ /dashboard/editor                                          4.58 kB         614 kB
+├ λ /dashboard/FormsWithValidation                             13.6 kB         626 kB
+├ λ /dashboard/githubSearch                                    5.66 kB         648 kB
+├ λ /dashboard/googleChart                                     170 kB          783 kB
+├ λ /dashboard/googlemap                                       19.1 kB         632 kB
+├ λ /dashboard/inputField                                      6.36 kB         671 kB
+├ λ /dashboard/invoice                                         10.1 kB         745 kB
+├ λ /dashboard/leafletmap                                      2.75 kB         612 kB
+├ λ /dashboard/mailbox                                         2.9 kB          613 kB
+├ λ /dashboard/message                                         3.66 kB         616 kB
+├ λ /dashboard/modal                                           5.4 kB          627 kB
+├ λ /dashboard/notes                                           4.34 kB         614 kB
+├ λ /dashboard/notification                                    4.63 kB         617 kB
+├ λ /dashboard/op_badge                                        5.82 kB         618 kB
+├ λ /dashboard/op_card                                         7.97 kB         629 kB
+├ λ /dashboard/op_carousel                                     13.1 kB         626 kB
+├ λ /dashboard/op_collapse                                     5.14 kB         618 kB
+├ λ /dashboard/op_popover                                      2.87 kB         616 kB
+├ λ /dashboard/op_tag                                          5.6 kB          618 kB
+├ λ /dashboard/op_timeline                                     4.41 kB         617 kB
+├ λ /dashboard/op_tooltip                                      2.46 kB         615 kB
+├ λ /dashboard/pagination                                      4.33 kB         646 kB
+├ λ /dashboard/popconfirm                                      5.39 kB         618 kB
+├ λ /dashboard/progress                                        4.26 kB         621 kB
+├ λ /dashboard/radiobox                                        6.21 kB         619 kB
+├ λ /dashboard/rating                                          6 kB            619 kB
+├ λ /dashboard/reactChart2                                     3.6 kB          616 kB
+├ λ /dashboard/reactDates                                      77.3 kB         738 kB
+├   └ css/d33ee532c54171c4d35b.css                             2.88 kB
+├ λ /dashboard/reactTrend                                      3.61 kB         613 kB
+├ λ /dashboard/reactVis                                        9.88 kB         623 kB
+├   └ css/c5cd4ab472d7f1a5333f.css                             1.09 kB
+├ λ /dashboard/reecharts                                       7.11 kB         620 kB
+├ λ /dashboard/selectbox                                       5.02 kB         640 kB
+├ λ /dashboard/shop                                            3.19 kB         613 kB
+├ λ /dashboard/shuffle                                         10.9 kB         621 kB
+├ λ /dashboard/spin                                            5.84 kB         622 kB
+├ λ /dashboard/swiper_slider                                   43.2 kB         656 kB
+├   └ css/ce337e7157cb9851ccd3.css                             4.38 kB
+├ λ /dashboard/tab                                             8.01 kB         648 kB
+├ λ /dashboard/table_ant                                       11.8 kB         773 kB
+├ λ /dashboard/todo                                            7.85 kB         617 kB
+├ λ /dashboard/transfer                                        12.6 kB         656 kB
+├ λ /dashboard/tree                                            6.66 kB         648 kB
+├ λ /dashboard/uppy                                            88.3 kB         698 kB
+├   └ css/aae0b99cc0beef877018.css                             11.5 kB
+├ λ /forgotpassword                                            3.32 kB         573 kB
+├ λ /resetpassword                                             3.32 kB         573 kB
+├ λ /signin                                                    2.15 kB         859 kB
+└ λ /signup                                                    3.96 kB         857 kB
++ First Load JS shared by all                                  566 kB
+  ├ chunks/0eacb3fd101de9a95c6d2d98388844279c4b443b.1a3654.js  23.6 kB
+  ├ chunks/3c27cabe483cddcf0f473a310f4bf5a8cfc638dd.c9a435.js  16.3 kB
+  ├ chunks/484bcb1e.a56484.js                                  65.4 kB
+  ├ chunks/52066749.fbbfa9.js                                  55.8 kB
+  ├ chunks/6e6a93e3cc593bf05e27d5f41a34f7e7fc5c5d29.7926af.js  3.31 kB
+  ├ chunks/75fc9c18.0ead17.js                                  19.3 kB
+  ├ chunks/80dcf67a2dd414bc401faadaf4536b761106766c.58efd8.js  3.98 kB
+  ├ chunks/8160726845948b096fadd40427e535b165422c58.ba5528.js  6.57 kB
+  ├ chunks/8de69d339293c894fc98ce396ceffe57760b0a80.71d2a3.js  22 kB
+  ├ chunks/a890acd4a24306b66e11f31fb7bf6d89b8c76c17.82323b.js  10.2 kB
+  ├ chunks/a9555848.5b53cb.js                                  69 B
+  ├ chunks/bc12b0d18a7cf8ec7ab9653e2b4d352158d3b249.5a0d51.js  34.1 kB
+  ├ chunks/cb815e23d6be2b1dcf3d8a1f0bb3af1bd543124e.a58735.js  43.6 kB
+  ├ chunks/commons.d86508.js                                   14.1 kB
+  ├ chunks/d66c3da70eb4512344044a443793903489f913fe.665422.js  5.02 kB
+  ├ chunks/e14ab069150b563a9d6d8893005cc248fb105b2a.c7acad.js  42.9 kB
+  ├ chunks/fc067d9685f9bb82b1a97661c133c39f2476947e.672f8e.js  15.3 kB
+  ├ chunks/framework.2a4edf.js                                 48.9 kB
+  ├ chunks/main.00c31b.js                                      10.7 kB
+  ├ chunks/pages/_app.1a7486.js                                121 kB
+  ├ chunks/webpack.4d418d.js                                   3.53 kB
+  ├ css/05a88ba4e4cef74ac2ce.css                               4.84 kB
+  └ css/530895c92f15db4b4257.css                               74.5 kB
+
+[info] 
+λ  (Server)  server-side renders at runtime (uses getInitialProps or getServerSideProps)
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+●  (SSG)     automatically generated as static HTML + JSON (uses getStaticProps)
+   (ISR)     incremental static regeneration (uses revalidate in getStaticProps)
+
+
+[debug] [2023-09-25T05:13:43.556Z] Error: Unable to load next.config.js.
+    at getConfig (C:\Users\EDUARDO\AppData\Roaming\nvm\v16.20.2\node_modules\firebase-tools\lib\frameworks\next\index.js:397:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async build (C:\Users\EDUARDO\AppData\Roaming\nvm\v16.20.2\node_modules\firebase-tools\lib\frameworks\next\index.js:68:59)
+    at async prepareFrameworks (C:\Users\EDUARDO\AppData\Roaming\nvm\v16.20.2\node_modules\firebase-tools\lib\frameworks\index.js:216:33)
+    at async deploy (C:\Users\EDUARDO\AppData\Roaming\nvm\v16.20.2\node_modules\firebase-tools\lib\deploy\index.js:55:13)
+[error] 
+[error] Error: An unexpected error has occurred.

@@ -8,7 +8,7 @@ import basicStyle from '@iso/assets/styles/constants';
 import * as configs from './config';
 import GoogleChart from 'react-google-charts';
 import ButtonExportToPDF from '../../ExportToPDF/ExportToPDF';
-import DemoReChart from '../ReCharts/DemoReChart';
+import DemoReChart from '../../ReCharts/DemoReChart';
 
 
 export default class ReCharts extends Component {

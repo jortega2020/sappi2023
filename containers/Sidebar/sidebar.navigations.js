@@ -52,6 +52,10 @@ export default [
 		leftIcon: <SidebarChartsIcon size={19} />,
 		children: [
 			{
+				key: 'demo',
+				label: 'sidebar.demoCharts0',
+			},
+			{
 				key: 'googleChart',
 				label: 'sidebar.demoCharts1',
 			},

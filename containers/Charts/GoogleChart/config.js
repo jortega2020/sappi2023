@@ -59,6 +59,65 @@ const BarChart = {
   ],
 };
 
+const NivelAcademicoBarChart = {
+  title: '',
+  key: 'BarChart',
+  chartType: 'BarChart',
+  width,
+  height,
+  data: [
+    [
+      'Cuenta de Becas',
+      'Nivel de Estudios',
+      {
+        role: 'style',
+      },
+    ],
+    [906, 'Doctorado', 'fill-color: #48A6F2; fill-opacity: 0.4'],
+    [15, 'Especialidad', 'fill-color: #f64744; fill-opacity: 0.4'],
+    [792, 'Maestría', 'fill-color: #ffbf00; fill-opacity: 0.4'],
+    [191, 'Medio Superior', 'fill-color: #511E78; fill-opacity: 0.4'],
+    [796, 'Superior', 'fill-color: #511E79; fill-opacity: 0.4'],
+  ],
+  options: {
+    title: 'Becarios por nivel academico',
+    titleTextStyle: {
+      color: '#788195',
+    },
+    bar: {
+      groupWidth: '95%',
+    },
+    legend: {
+      position: 'none',
+    },
+    animation: {
+      duration: 1000,
+      easing: 'in',
+      startup: true,
+    },
+    hAxis: {
+      textStyle: {
+        color: '#788195',
+      },
+    },
+    vAxis: {
+      textStyle: {
+        color: '#788195',
+      },
+    },
+    tooltip: {
+      textStyle: {
+        color: '#788195',
+      },
+    },
+  },
+  chartEvents: [
+    {
+      eventName: 'onmouseover',
+    },
+  ],
+};
+
 /* * * * * * * * * * * * * * * * * * * *
               Line Charts
 * * * * * * * * * * * * * * * * * * * */
@@ -639,6 +698,77 @@ const ComboChart = {
   },
 };
 
+const BecasComboChart = {
+  title: 'Gráfico combinado',
+  key: 'ComboChart',
+  chartType: 'ComboChart',
+  width,
+  height,
+  data: [
+    [
+      'Month',
+      'Bolivia',
+      'Ecuador',
+      'Madagascar',
+      'Papua New Guinea',
+      'Rwanda',
+      'Average',
+    ],
+    ['2004/05', 165, 938, 522, 998, 450, 614.6],
+    ['2005/06', 135, 1120, 599, 1268, 288, 682],
+    ['2006/07', 157, 1167, 587, 807, 397, 623],
+    ['2007/08', 139, 1110, 615, 968, 215, 609.4],
+    ['2008/09', 136, 691, 629, 1026, 366, 569.6],
+  ],
+  options: {
+    title: 'Monthly Coffee Production by Country',
+    titleTextStyle: {
+      color: '#788195',
+    },
+    legend: {
+      textStyle: {
+        color: '#788195',
+      },
+    },
+    hAxis: {
+      textStyle: {
+        color: '#788195',
+      },
+      title: 'Cups',
+      titleTextStyle: {
+        color: '#788195',
+      },
+    },
+    vAxis: {
+      textStyle: {
+        color: '#788195',
+      },
+      title: 'Month',
+      titleTextStyle: {
+        color: '#788195',
+      },
+    },
+    seriesType: 'bars',
+    series: {
+      5: {
+        type: 'line',
+      },
+    },
+    animation: {
+      duration: 1000,
+      easing: 'in',
+      startup: true,
+    },
+    colors: ['#00b16a', '#ff6384', '#511E78', '#01C0C8', '#ffbf00', '#48A6F2'],
+    dataOpacity: 0.6,
+    tooltip: {
+      textStyle: {
+        color: '#788195',
+      },
+    },
+  },
+};
+
 /* * * * * * * * * * * * * * * * * * * *
               Donut Charts
 * * * * * * * * * * * * * * * * * * * */
@@ -680,6 +810,41 @@ const DonutChart = {
   },
 };
 
+const ProgramaAcademicoDonutChart = {
+  title: '',
+  key: 'DonutChart',
+  chartType: 'PieChart',
+  width,
+  height,
+  data: [
+    ['TipoDePrograma', 'Becas'],
+    ['CIENCIAS MÉDICO BIOLÓGICAS', 1065],
+    ['CIENCIAS SOCIALES Y ADMINISTRATIVAS', 213],
+    ['INGENIERÍA Y CIENCIAS FÍSICO MATEMÁTICAS', 1422],
+  ],
+  options: {
+    title: 'BECAS POR TIPO DE PROGRAMA ACADEMICO',
+    titleTextStyle: {
+      color: '#788195',
+    },
+    legend: {
+      textStyle: {
+        color: '#788195',
+      },
+    },
+    pieHole: 0.4,
+    pieSliceTextStyle: {
+      color: '#ffffff',
+    },
+    is3D: true,
+    colors: ['#9678AE', '#F99FB4', '#C8E4FB', '#01C0C8', '#ffbf00'],
+    tooltip: {
+      textStyle: {
+        color: '#788195',
+      },
+    },
+  },
+};
 /* * * * * * * * * * * * * * * * * * * *
           Stepped Area Charts
 * * * * * * * * * * * * * * * * * * * */
@@ -1185,4 +1350,6 @@ export {
   Waterfall,
   Gantt,
   WordTree,
+  NivelAcademicoBarChart,
+  ProgramaAcademicoDonutChart
 };

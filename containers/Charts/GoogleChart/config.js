@@ -60,7 +60,7 @@ const BarChart = {
 };
 
 const NivelAcademicoBarChart = {
-  title: '',
+  title: 'Grafica Demo 1',
   key: 'BarChart',
   chartType: 'BarChart',
   width,
@@ -73,11 +73,11 @@ const NivelAcademicoBarChart = {
         role: 'style',
       },
     ],
-    [906, 'Doctorado', 'fill-color: #48A6F2; fill-opacity: 0.4'],
-    [15, 'Especialidad', 'fill-color: #f64744; fill-opacity: 0.4'],
-    [792, 'Maestría', 'fill-color: #ffbf00; fill-opacity: 0.4'],
-    [191, 'Medio Superior', 'fill-color: #511E78; fill-opacity: 0.4'],
-    [796, 'Superior', 'fill-color: #511E79; fill-opacity: 0.4'],
+    ['Doctorado',906, 'fill-color: #48A6F2; fill-opacity: 0.4'],
+    ['Especialidad',15, 'fill-color: #f64744; fill-opacity: 0.4'],
+    [ 'Maestría',792, 'fill-color: #ffbf00; fill-opacity: 0.4'],
+    [ 'Medio Superior',191, 'fill-color: #511E78; fill-opacity: 0.4'],
+    [ 'Superior',796, 'fill-color: #511E79; fill-opacity: 0.4'],
   ],
   options: {
     title: 'Becarios por nivel academico',

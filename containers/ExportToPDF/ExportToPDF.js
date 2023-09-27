@@ -7,7 +7,7 @@ import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
 
 
-export default function ButtonExportToPDF({container, fileName}) {
+export default function ButtonExportToPDF({container, fileName, position='p',paperSize="a4"}) {
 
     const margin = {
         margin: direction === 'rtl' ? '0 0 8px 8px' : '0 8px 8px 0',
@@ -18,7 +18,7 @@ export default function ButtonExportToPDF({container, fileName}) {
         html2canvas(document.querySelector("#"+container)).then(canvas => {
             //document.body.appendChild(canvas);  // if you want see your screenshot in body.
             const imgData = canvas.toDataURL('image/png');
-            const pdf = new jsPDF();
+            const pdf = new jsPDF(position, 'mm', paperSize);
             pdf.addImage(imgData, 'PNG', 0, 0);
             pdf.save(`${fileName}.pdf`); 
         });
